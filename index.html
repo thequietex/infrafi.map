@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>infrafi.map — Infrastructure Finance Dashboard</title>
+  <meta name="description" content="Track DePIN and InfraFi projects across Compute, Energy, Bandwidth, Wireless, Storage, and Sensors. Revenue, chains, backers, and more.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬡</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="header-left">
+        <h1>infrafi<span class="dot">.</span>map</h1>
+        <span class="tagline">everything infrastructure finance</span>
+      </div>
+      <div class="header-right">
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-value" id="totalProjects">0</span>
+            <span class="stat-label">projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" id="totalVerticals">6</span>
+            <span class="stat-label">verticals</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="controls">
+      <div class="search-wrap">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" id="searchInput" placeholder="Search projects, chains, backers..." autocomplete="off" spellcheck="false">
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Compute">Compute</button>
+        <button class="filter-btn" data-filter="Energy">Energy</button>
+        <button class="filter-btn" data-filter="Bandwidth">Bandwidth</button>
+        <button class="filter-btn" data-filter="Wireless">Wireless</button>
+        <button class="filter-btn" data-filter="Storage">Storage</button>
+        <button class="filter-btn" data-filter="Sensors">Sensors</button>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table id="projectTable">
+        <thead>
+          <tr>
+            <th class="col-expand"></th>
+            <th class="col-name sortable" data-sort="name">Project <span class="sort-arrow"></span></th>
+            <th class="col-ticker sortable" data-sort="ticker">Ticker <span class="sort-arrow"></span></th>
+            <th class="col-vertical sortable" data-sort="vertical">Vertical <span class="sort-arrow"></span></th>
+            <th class="col-chain sortable" data-sort="chain">Chain <span class="sort-arrow"></span></th>
+            <th class="col-revenue sortable" data-sort="revenue">Revenue (Ann.) <span class="sort-arrow"></span></th>
+            <th class="col-raised sortable" data-sort="raised">Raised <span class="sort-arrow"></span></th>
+            <th class="col-devices sortable" data-sort="devices">Devices/Nodes <span class="sort-arrow"></span></th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+
+    <div class="empty-state" id="emptyState" style="display:none">
+      <p>No projects match your search.</p>
+    </div>
+
+    <footer>
+      <div class="footer-left">
+        <span>Data compiled from <a href="https://depinscan.io" target="_blank" rel="noopener">DePINscan</a>, <a href="https://github.com/ev3-team/depin-ninja-api-docs" target="_blank" rel="noopener">DePIN.Ninja</a>, <a href="https://www.coingecko.com/en/categories/depin" target="_blank" rel="noopener">CoinGecko</a>, <a href="https://messari.io" target="_blank" rel="noopener">Messari</a></span>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/infrafi" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
