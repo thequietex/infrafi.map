@@ -190,6 +190,7 @@
   }
 
   function buildDetailContent(p) {
+    // Links
     var linksHtml = '';
     if (p.links) {
       var linkEntries = Object.entries(p.links);
@@ -203,6 +204,7 @@
       linksHtml += '</div>';
     }
 
+    // Backers
     var backersHtml = '<div class="backer-list">';
     p.backers.forEach(function (b) {
       backersHtml += '<span class="backer-tag">' + esc(b) + '</span>';
@@ -210,20 +212,11 @@
     backersHtml += '</div>';
 
     return '<div class="detail-content">' +
-      '<div class="detail-section">' +
-        '<span class="detail-label">Model</span>' +
-        '<span class="detail-value">' + esc(p.model) + '</span>' +
-      '</div>' +
-      '<div class="detail-section">' +
-        '<span class="detail-label">Backers</span>' +
+      '<div class="detail-model">' + esc(p.model) + '</div>' +
+      '<div class="detail-meta">' +
+        '<span class="detail-meta-label">Backers</span>' +
         backersHtml +
-      '</div>' +
-      '<div class="detail-section">' +
-        '<span class="detail-label">Chain</span>' +
-        '<span class="detail-value"><strong>' + esc(p.chain) + '</strong></span>' +
-      '</div>' +
-      '<div class="detail-section">' +
-        '<span class="detail-label">Links</span>' +
+        '<span class="detail-divider"></span>' +
         linksHtml +
       '</div>' +
     '</div>';

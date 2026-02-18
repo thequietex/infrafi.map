@@ -1,0 +1,444 @@
+/* ========================================
+   infrafi.map — Impact page styles
+   ======================================== */
+
+/* ---- Hero ---- */
+
+.impact-hero {
+  padding: 40px 0 32px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 32px;
+}
+
+.impact-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+  font-family: var(--font-mono);
+}
+
+.impact-subtitle {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  max-width: 720px;
+  line-height: 1.7;
+}
+
+/* ---- Section headings ---- */
+
+.section-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  margin-bottom: 4px;
+}
+
+.section-desc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+/* ---- Counters ---- */
+
+.counters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.counter-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: border-color var(--transition);
+}
+
+.counter-card:hover {
+  border-color: var(--border-light);
+}
+
+.counter-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-mono);
+}
+
+.counter-label {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.counter-source {
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* ---- Vertical Impact Cards ---- */
+
+.impact-verticals {
+  margin-bottom: 48px;
+}
+
+.vertical-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.v-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color var(--transition);
+}
+
+.v-card:hover {
+  border-color: var(--border-light);
+}
+
+.v-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.v-card-icon {
+  flex-shrink: 0;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+}
+
+.v-card[data-vertical="Wireless"] .v-card-icon { color: #f472b6; }
+.v-card[data-vertical="Compute"] .v-card-icon { color: #818cf8; }
+.v-card[data-vertical="Sensors"] .v-card-icon { color: #34d399; }
+.v-card[data-vertical="Energy"] .v-card-icon { color: #fbbf24; }
+.v-card[data-vertical="Storage"] .v-card-icon { color: #a78bfa; }
+.v-card[data-vertical="Bandwidth"] .v-card-icon { color: #22d3ee; }
+
+.v-card-title {
+  flex: 1;
+  min-width: 0;
+}
+
+.v-card-name {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.v-card-stat {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 1px;
+}
+
+.v-card-toggle {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  transition: transform 200ms ease, color 200ms ease;
+  font-weight: 300;
+}
+
+.v-card.open .v-card-toggle {
+  transform: rotate(45deg);
+  color: var(--accent);
+}
+
+/* Card body */
+.v-card-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 350ms ease, padding 200ms ease;
+  padding: 0 20px;
+}
+
+.v-card.open .v-card-body {
+  max-height: 1200px;
+  padding: 0 20px 20px;
+}
+
+.v-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.impact-item {
+  padding: 14px 16px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.impact-num {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 6px;
+  font-family: var(--font-mono);
+}
+
+.impact-desc {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.v-card-quote {
+  border-left: 2px solid var(--border-light);
+  padding-left: 16px;
+}
+
+.v-card-quote blockquote {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
+.v-card-quote cite {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  font-style: normal;
+}
+
+/* ---- Timeline ---- */
+
+.timeline-section {
+  margin-bottom: 48px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 32px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: var(--border);
+}
+
+.tl-item {
+  position: relative;
+  padding-bottom: 24px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.tl-item:last-child {
+  padding-bottom: 0;
+}
+
+.tl-marker {
+  position: absolute;
+  left: -30px;
+  top: 4px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--border-light);
+  border: 2px solid var(--bg);
+  z-index: 1;
+}
+
+.tl-current .tl-marker {
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent-dim);
+}
+
+.tl-date {
+  flex-shrink: 0;
+  width: 70px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding-top: 1px;
+  font-variant-numeric: tabular-nums;
+}
+
+.tl-current .tl-date {
+  color: var(--accent);
+}
+
+.tl-content {
+  flex: 1;
+}
+
+.tl-content strong {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.tl-content p {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* ---- Economic Impact ---- */
+
+.econ-section {
+  margin-bottom: 48px;
+}
+
+.econ-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.econ-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: border-color var(--transition);
+}
+
+.econ-card:hover {
+  border-color: var(--border-light);
+}
+
+.econ-icon {
+  color: var(--text-muted);
+}
+
+.econ-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+}
+
+.econ-label {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* ---- Partnerships ---- */
+
+.partnerships-section {
+  margin-bottom: 48px;
+}
+
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 8px;
+}
+
+.partner-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color var(--transition);
+}
+
+.partner-card:hover {
+  border-color: var(--accent);
+}
+
+.partner-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.partner-desc {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 768px) {
+  .impact-hero {
+    padding: 24px 0;
+  }
+
+  .impact-title {
+    font-size: 1.5rem;
+  }
+
+  .counters {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .counter-value {
+    font-size: 1.2rem;
+  }
+
+  .v-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    padding-left: 24px;
+  }
+
+  .tl-date {
+    width: 58px;
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .counters {
+    grid-template-columns: 1fr;
+  }
+
+  .partner-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .econ-grid {
+    grid-template-columns: 1fr;
+  }
+}
