@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impact — infrafi.map</title>
+  <meta name="description" content="Real-world impact of DePIN and InfraFi projects — devices deployed, revenue generated, lives changed.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬡</text></svg>">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="impact.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="header-left">
+        <h1>infrafi<span class="dot">.</span>map</h1>
+        <span class="tagline">everything infrastructure finance</span>
+      </div>
+      <div class="header-right">
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Dashboard</a>
+          <a href="impact.html" class="nav-link active">Impact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="impact-hero">
+      <h2 class="impact-title">Real-World Impact</h2>
+      <p class="impact-subtitle">Decentralized infrastructure isn't theoretical. It's deployed across 191 countries, generating $1.8B+ annualized revenue, and powered by millions of contributors.</p>
+    </section>
+
+    <!-- ===== HEADLINE COUNTERS ===== -->
+    <section class="counters" id="counters">
+      <div class="counter-card">
+        <span class="counter-value" data-target="42600000">0</span>
+        <span class="counter-label">Devices Deployed</span>
+        <span class="counter-source">DePINscan 2026</span>
+      </div>
+      <div class="counter-card">
+        <span class="counter-value" data-target="191">0</span>
+        <span class="counter-label">Countries Reached</span>
+        <span class="counter-source">Helium Network</span>
+      </div>
+      <div class="counter-card">
+        <span class="counter-value" data-target="1800" data-prefix="$" data-suffix="M">0</span>
+        <span class="counter-label">Annualized Revenue</span>
+        <span class="counter-source">DePIN.Ninja Jan 2026</span>
+      </div>
+      <div class="counter-card">
+        <span class="counter-value" data-target="850" data-prefix="$" data-suffix="M">0</span>
+        <span class="counter-label">VC Investment (2024)</span>
+        <span class="counter-source">The Block Research</span>
+      </div>
+      <div class="counter-card">
+        <span class="counter-value" data-target="433">0</span>
+        <span class="counter-label">Active Protocols</span>
+        <span class="counter-source">DePINscan</span>
+      </div>
+      <div class="counter-card">
+        <span class="counter-value" data-target="3000000">0</span>
+        <span class="counter-label">Network Providers</span>
+        <span class="counter-source">Messari 2025</span>
+      </div>
+    </section>
+
+    <!-- ===== VERTICAL IMPACT CARDS ===== -->
+    <section class="impact-verticals">
+      <h3 class="section-heading">Impact by Vertical</h3>
+      <p class="section-desc">Click any card to expand real-world case studies and data.</p>
+
+      <div class="vertical-cards" id="verticalCards">
+
+        <!-- WIRELESS -->
+        <div class="v-card" data-vertical="Wireless">
+          <div class="v-card-header">
+            <div class="v-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/></svg>
+            </div>
+            <div class="v-card-title">
+              <span class="v-card-name">Wireless &amp; Connectivity</span>
+              <span class="v-card-stat">962K+ hotspots across 191 countries</span>
+            </div>
+            <span class="v-card-toggle">+</span>
+          </div>
+          <div class="v-card-body">
+            <div class="v-card-grid">
+              <div class="impact-item">
+                <span class="impact-num">962,000+</span>
+                <span class="impact-desc">Helium hotspots deployed in 81,000 cities — the world's largest decentralized wireless network. T-Mobile users seamlessly roam onto Helium's 5G in high-traffic areas.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">100,000</span>
+                <span class="impact-desc">Helium Mobile MVNO subscribers as of early 2026, paying $20/month for service backed by a mix of decentralized and carrier infrastructure.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">AT&amp;T Partnership</span>
+                <span class="impact-desc">XNET offloads AT&amp;T mobile data via 688 neutral-host nodes. AT&amp;T pays XNET in USD, distributed to operators as tokens — real carrier revenue flowing to DePIN.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">200M+ Users</span>
+                <span class="impact-desc">WiFi Map connects 200 million users to crowdsourced free WiFi hotspots globally — one of the largest consumer DePIN apps by user count.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">Ecuador Connectivity</span>
+                <span class="impact-desc">Wayru partners with Telecu to deploy community WiFi hotspots in high-traffic areas across Ecuador, bringing internet access to underserved populations in Latin America.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">780K Devices</span>
+                <span class="impact-desc">Nodle turns smartphones into IoT base stations. 780,000 devices contribute Bluetooth/WiFi connectivity via Proof of Connectivity, creating a decentralized mesh for sensor data.</span>
+              </div>
+            </div>
+            <div class="v-card-quote">
+              <blockquote>"Helium's on-chain revenue grew 800% year-over-year, proving that decentralized wireless is not a toy — it's a legitimate carrier-grade alternative."</blockquote>
+              <cite>— Messari State of DePIN 2025</cite>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMPUTE -->
+        <div class="v-card" data-vertical="Compute">
+          <div class="v-card-header">
+            <div class="v-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <div class="v-card-title">
+              <span class="v-card-name">Compute &amp; AI</span>
+              <span class="v-card-stat">1M+ GPUs, 80-90% cheaper than AWS</span>
+            </div>
+            <span class="v-card-toggle">+</span>
+          </div>
+          <div class="v-card-body">
+            <div class="v-card-grid">
+              <div class="impact-item">
+                <span class="impact-num">80-90% Cost Cut</span>
+                <span class="impact-desc">AWS charges $10-12/hr for an NVIDIA H100. DePIN compute networks offer the same GPU class for $1-2/hr — democratizing AI training and inference for startups worldwide.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">435,000+ GPUs</span>
+                <span class="impact-desc">Aethir alone has deployed 435K+ enterprise-grade GPUs across 93 countries with 99.99% uptime, generating an estimated $660M annualized revenue from real workloads.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">600,000+ GPUs</span>
+                <span class="impact-desc">io.net aggregates 600K+ GPUs from data centers, crypto miners, and consumer devices on Solana — with proof-of-compute for transparent verification.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">Academic Research</span>
+                <span class="impact-desc">Akash Network GPUs are used by UT Austin for research, Venice.ai for private AI inference, and ElizaOS for autonomous agent infrastructure. Brev.dev (acquired by NVIDIA) also used Akash.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">80 PetaFLOPS</span>
+                <span class="impact-desc">Theta Network's 10,000+ edge nodes provide 80 PetaFLOPS of distributed GPU compute — used by Lionsgate, MGM, Katy Perry, and American Idol for video/AI workloads.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">32 AI Subnets</span>
+                <span class="impact-desc">Bittensor runs 32 specialized AI subnets (NLP, image gen, data analysis) with 4,096 miners each. Decentralized ML training without a single company controlling the models.</span>
+              </div>
+            </div>
+            <div class="v-card-quote">
+              <blockquote>"Decentralized compute is not just cheaper — it removes the GPU bottleneck that blocks 90% of AI startups from ever training a model. DePIN makes AI permissionless."</blockquote>
+              <cite>— Grayscale Research, "How DePIN Bridges Crypto to Physical Systems"</cite>
+            </div>
+          </div>
+        </div>
+
+        <!-- SENSORS -->
+        <div class="v-card" data-vertical="Sensors">
+          <div class="v-card-header">
+            <div class="v-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+            </div>
+            <div class="v-card-title">
+              <span class="v-card-name">Sensors &amp; Mapping</span>
+              <span class="v-card-stat">Mapping roads, weather, GPS — decentralized</span>
+            </div>
+            <span class="v-card-toggle">+</span>
+          </div>
+          <div class="v-card-body">
+            <div class="v-card-grid">
+              <div class="impact-item">
+                <span class="impact-num">77,483 Dashcams</span>
+                <span class="impact-desc">Hivemapper contributors drive with 4K dashcams to build a decentralized Google Street View alternative. AI processes footage into map data sold to enterprises. Backed by Zillow co-founder.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">John Deere &amp; DJI</span>
+                <span class="impact-desc">GEODNET's 21,000 GNSS base stations provide centimeter-level GPS precision used by John Deere for precision agriculture, DJI for drone navigation, and Topcon for surveying.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">518% YoY Growth</span>
+                <span class="impact-desc">GEODNET's annualized revenue hit $5.28M — up 518% year-over-year. Real revenue from real enterprise customers who need sub-centimeter positioning in the field.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">27,000+ Cars</span>
+                <span class="impact-desc">DIMO connects vehicles manufactured after 2008 as on-chain NFTs. Owners control and monetize their driving data for insurance, maintenance, and city planning analytics.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">9,500+ Stations</span>
+                <span class="impact-desc">WeatherXM deploys personal weather stations providing hyperlocal meteorological data. In regions with sparse government stations, this fills critical gaps for agriculture and disaster preparedness.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">100K+ Devices</span>
+                <span class="impact-desc">NATIX Network deploys IoT sensors on cars and homes for real-time geospatial data — privacy-preserving edge compute feeding autonomous vehicle navigation and urban planning.</span>
+              </div>
+            </div>
+            <div class="v-card-quote">
+              <blockquote>"Farmers using GEODNET RTK corrections achieve centimeter-level tractor guidance, reducing overlap passes by 10-15% and saving thousands in fuel and seed per season."</blockquote>
+              <cite>— GEODNET Enterprise Case Study</cite>
+            </div>
+          </div>
+        </div>
+
+        <!-- ENERGY -->
+        <div class="v-card" data-vertical="Energy">
+          <div class="v-card-header">
+            <div class="v-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <div class="v-card-title">
+              <span class="v-card-name">Energy &amp; Green</span>
+              <span class="v-card-stat">190K+ solar nodes, on-chain carbon credits</span>
+            </div>
+            <span class="v-card-toggle">+</span>
+          </div>
+          <div class="v-card-body">
+            <div class="v-card-grid">
+              <div class="impact-item">
+                <span class="impact-num">190,000+ Nodes</span>
+                <span class="impact-desc">Arkreen's Green Energy Data Nodes track solar output across homes and installations. Each node generates verifiable on-chain Renewable Energy Certificates (RECs).</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">$100M RWA</span>
+                <span class="impact-desc">PowerPod and Arkreen launched a $100M Real World Asset initiative for renewable energy infrastructure across Southeast Asia — EV charging stations and battery-swap cabinets.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">50+ Solar Farms</span>
+                <span class="impact-desc">Glow protocol incentivizes verified solar farms. The protocol purchases and retires carbon credits proportional to clean energy production — $5M+ annualized revenue.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">Home Energy</span>
+                <span class="impact-desc">Daylight (backed by a16z) connects smart thermostats, EV chargers, and batteries to aggregate distributed energy resources for grid demand response — reducing peak energy costs.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">AI + Green</span>
+                <span class="impact-desc">Arkreen's vision: powering AI compute with verified green energy. As GPU demand surges, linking energy certificates to compute jobs creates accountable carbon-neutral AI infrastructure.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">On-Chain RECs</span>
+                <span class="impact-desc">Unlike traditional RECs (opaque, double-counted), blockchain-verified certificates are transparent, immutable, and auditable — solving the greenwashing problem in carbon markets.</span>
+              </div>
+            </div>
+            <div class="v-card-quote">
+              <blockquote>"DePIN energy networks don't just track carbon — they create liquid markets for renewable energy certificates that are transparent by default, not by audit."</blockquote>
+              <cite>— Arkreen / Robo.ai Partnership Announcement</cite>
+            </div>
+          </div>
+        </div>
+
+        <!-- STORAGE -->
+        <div class="v-card" data-vertical="Storage">
+          <div class="v-card-header">
+            <div class="v-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <div class="v-card-title">
+              <span class="v-card-name">Storage</span>
+              <span class="v-card-stat">3.3 EiB capacity, permanent archives</span>
+            </div>
+            <span class="v-card-toggle">+</span>
+          </div>
+          <div class="v-card-body">
+            <div class="v-card-grid">
+              <div class="impact-item">
+                <span class="impact-num">3.3 Exbibytes</span>
+                <span class="impact-desc">Filecoin's network stores 3.3 EiB of committed capacity — more than the entire Library of Congress many times over. 32% of storage is actively utilized with paid deals.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">$257M Raised</span>
+                <span class="impact-desc">Filecoin's $257M raise (a16z, Sequoia, USV) was the largest token sale in history at the time. The Onchain Cloud initiative now targets replacing AWS S3 for enterprise workloads.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">Permanent Memory</span>
+                <span class="impact-desc">Arweave stores data permanently for a one-time fee. Used to preserve Wikipedia mirrors, censored journalism, government records, and NFT metadata that outlives any company.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">1.28B Transactions</span>
+                <span class="impact-desc">Arweave's ecosystem processed 1.28 billion transactions across 130+ active projects — permanent, censorship-resistant data that no single entity can delete or alter.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">S3-Compatible</span>
+                <span class="impact-desc">Storj offers $4/TB/month S3-compatible storage across 16,000+ globally distributed nodes. AWS developers migrate with zero code changes — just swap the endpoint.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">Data Sovereignty</span>
+                <span class="impact-desc">Sia's privacy-first model lets users set their own contract terms. Files are encrypted and split across nodes — no single host ever sees complete data. True data sovereignty.</span>
+              </div>
+            </div>
+            <div class="v-card-quote">
+              <blockquote>"Filecoin's storage utilization rose to 32%, with expectations of surpassing 1 EiB in paid storage deals. The path to a decentralized AWS is no longer speculative."</blockquote>
+              <cite>— Messari State of Filecoin Q3 2025</cite>
+            </div>
+          </div>
+        </div>
+
+        <!-- BANDWIDTH -->
+        <div class="v-card" data-vertical="Bandwidth">
+          <div class="v-card-header">
+            <div class="v-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div class="v-card-title">
+              <span class="v-card-name">Bandwidth &amp; Data</span>
+              <span class="v-card-stat">3M+ users sharing bandwidth for AI</span>
+            </div>
+            <span class="v-card-toggle">+</span>
+          </div>
+          <div class="v-card-body">
+            <div class="v-card-grid">
+              <div class="impact-item">
+                <span class="impact-num">200K → 3M</span>
+                <span class="impact-desc">Grass Network scaled from 200,000 to 3 million users in one year. Participants share idle internet bandwidth to collect web data for AI training (Laion, Ontocord).</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">AI Data Pipeline</span>
+                <span class="impact-desc">Grass has distributed hundreds of millions of dollars in rewards. The data collected is sold to AI labs, creating a direct economic link between home internet users and frontier AI models.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">Video CDN</span>
+                <span class="impact-desc">Theta Network's 10,000+ edge nodes reduce CDN costs for video platforms. Partners include Lionsgate, MGM, FuseTV, and the MetaCannes Film3 Festival. Validators include Google and Samsung.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">Censorship Bypass</span>
+                <span class="impact-desc">Orchid and Mysterium provide decentralized VPN access across 100+ countries. Critical for users in censored regions — 5,000+ Orchid nodes and 3,800+ Mysterium nodes worldwide.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">Web3 Backbone</span>
+                <span class="impact-desc">The Graph indexes blockchain data via 500+ decentralized indexers. Without it, most dApps can't query chain data efficiently. It is the Google of Web3 — critical invisible infrastructure.</span>
+              </div>
+              <div class="impact-item">
+                <span class="impact-num">$48M for Privacy</span>
+                <span class="impact-desc">Orchid raised $48M from a16z, Sequoia, and Polychain to build nanopayment-based VPN infrastructure. Each data packet carries a micro-payment ticket — bandwidth as a commodity.</span>
+              </div>
+            </div>
+            <div class="v-card-quote">
+              <blockquote>"Bandwidth-sharing DePIN is the invisible layer powering the AI boom. Every frontier model needs training data, and decentralized collection networks are becoming the default pipeline."</blockquote>
+              <cite>— Polychain Capital (Grass Bridge Round)</cite>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== GROWTH TIMELINE ===== -->
+    <section class="timeline-section">
+      <h3 class="section-heading">The DePIN Revenue Trajectory</h3>
+      <p class="section-desc">From experiment to infrastructure — tracked milestones.</p>
+
+      <div class="timeline" id="timeline">
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-date">2020</div>
+          <div class="tl-content">
+            <strong>Helium Genesis</strong>
+            <p>Helium deploys first LoRaWAN hotspots. The "mine crypto by providing wireless coverage" model proves people will deploy physical hardware for token rewards.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-date">2021</div>
+          <div class="tl-content">
+            <strong>Storage Wars</strong>
+            <p>Filecoin crosses 1 EiB of storage. Arweave gains traction for NFT metadata permanence. The decentralized storage narrative crystallizes.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-date">2022</div>
+          <div class="tl-content">
+            <strong>DePIN Term Coined</strong>
+            <p>Messari popularizes "DePIN" as a category. Subcategories formalized: Compute, Storage, Wireless, Sensors, Bandwidth, Energy.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-date">2023</div>
+          <div class="tl-content">
+            <strong>Revenue Proof</strong>
+            <p>Total DePIN sector revenue reaches ~$30M. Storage leads with $25M. Hardware costs drop 95%. Helium migrates to Solana for scalability.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-date">2024</div>
+          <div class="tl-content">
+            <strong>VC Floodgates</strong>
+            <p>$850M+ invested in 165+ DePIN startups. io.net hits $1B valuation. Render migrates to Solana. GPU demand explodes with AI boom.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-date">2025</div>
+          <div class="tl-content">
+            <strong>Enterprise Adoption</strong>
+            <p>Market cap hits $19.2B (270% YoY). AT&T partners with XNET. Akash used by NVIDIA-acquired brev.dev. 42.6M total devices.</p>
+          </div>
+        </div>
+        <div class="tl-item tl-current">
+          <div class="tl-marker"></div>
+          <div class="tl-date">Jan 2026</div>
+          <div class="tl-content">
+            <strong>$150M Monthly Revenue</strong>
+            <p>DePIN sector hits unprecedented $150M in a single month. Aethir, Render, and Helium lead. The infrastructure layer is no longer speculative — it's generating real recurring revenue at scale.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ECONOMIC IMPACT ===== -->
+    <section class="econ-section">
+      <h3 class="section-heading">Economic Impact on Individuals</h3>
+      <div class="econ-grid">
+        <div class="econ-card">
+          <div class="econ-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <span class="econ-value">3,000,000+</span>
+          <span class="econ-label">Individual providers earning from DePIN networks globally</span>
+        </div>
+        <div class="econ-card">
+          <div class="econ-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <span class="econ-value">95%</span>
+          <span class="econ-label">Hardware cost reduction across DePIN categories since 2021</span>
+        </div>
+        <div class="econ-card">
+          <div class="econ-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <span class="econ-value">191</span>
+          <span class="econ-label">Countries where individuals earn income by running DePIN nodes</span>
+        </div>
+        <div class="econ-card">
+          <div class="econ-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          </div>
+          <span class="econ-value">80-90%</span>
+          <span class="econ-label">GPU compute cost savings vs centralized cloud (AWS, GCP, Azure)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KEY PARTNERSHIPS ===== -->
+    <section class="partnerships-section">
+      <h3 class="section-heading">Enterprise Partnerships</h3>
+      <p class="section-desc">DePIN is no longer fringe. These are real enterprise integrations.</p>
+      <div class="partner-grid">
+        <div class="partner-card">
+          <span class="partner-name">T-Mobile + Helium</span>
+          <span class="partner-desc">Carrier roaming onto decentralized 5G in congested areas</span>
+        </div>
+        <div class="partner-card">
+          <span class="partner-name">AT&amp;T + XNET</span>
+          <span class="partner-desc">Paid data offload via decentralized WiFi hotspots</span>
+        </div>
+        <div class="partner-card">
+          <span class="partner-name">John Deere + GEODNET</span>
+          <span class="partner-desc">Centimeter-precision GPS for autonomous tractor guidance</span>
+        </div>
+        <div class="partner-card">
+          <span class="partner-name">Google + Theta</span>
+          <span class="partner-desc">Enterprise validator on Theta's edge compute network</span>
+        </div>
+        <div class="partner-card">
+          <span class="partner-name">Samsung + Theta</span>
+          <span class="partner-desc">Strategic investor and governance council member</span>
+        </div>
+        <div class="partner-card">
+          <span class="partner-name">Sony + Theta</span>
+          <span class="partner-desc">Innovation Fund backing decentralized video infrastructure</span>
+        </div>
+        <div class="partner-card">
+          <span class="partner-name">NVIDIA + Akash</span>
+          <span class="partner-desc">Brev.dev (NVIDIA-acquired) used Akash for GPU compute</span>
+        </div>
+        <div class="partner-card">
+          <span class="partner-name">DJI + GEODNET</span>
+          <span class="partner-desc">Precision positioning for commercial drone operations</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-left">
+        <span>Data sourced from <a href="https://depinscan.io" target="_blank" rel="noopener">DePINscan</a>, <a href="https://github.com/ev3-team/depin-ninja-api-docs" target="_blank" rel="noopener">DePIN.Ninja</a>, <a href="https://research.grayscale.com/reports/the-real-world-how-depin-bridges-crypto-back-to-physical-systems" target="_blank" rel="noopener">Grayscale Research</a>, <a href="https://messari.io" target="_blank" rel="noopener">Messari</a></span>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/infrafi" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="impact.js"></script>
+</body>
+</html>
